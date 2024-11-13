@@ -19,6 +19,31 @@ body {
     padding: 10px 25px;
 }
 
+
+
 #myList li{
-    list-style: none;    ;   
+    list-style: none; 
+    position: relative;
+
+}
+
+#myList li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    background-image: url(../img/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+
+#myList li.checked{
+    color:#555;
+    text-decoration: line-through;
+}
+
+#myList li.checked::before{
+    background-image: url(../img/checked.png);
 }

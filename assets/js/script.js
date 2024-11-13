@@ -12,6 +12,19 @@ function newElements(){
         let li = document.createElement('li'); //creata la variabile per contenere gli elementi li 
         li.innerHTML = inputBox.value; //viene stampato il valore(value) di inputBox all'interno del li appena creato
         list.appendChild(li); //appeso il li appena creato con il valore stampato all'interno di ul
-        inputBox.value = ''; //svuota l'input
+        let btnCestino = document.createElement('button');
+        btnCestino.innerHTML = '🗑️';
+        li.appendChild(btnCestino);
+        inputBox.value = ''; //svuota l'input - deve stare sotto a tutto
+        btnCestino.addEventListener('click', function(){
+        li.remove();
+        })
+        li.addEventListener('click', function(){
+        li.classList.toggle('checked');
+        })
+
+        }
+        
       }
-}
+
+
