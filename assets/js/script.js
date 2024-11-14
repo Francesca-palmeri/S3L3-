@@ -22,9 +22,7 @@ function newElements(){
         li.addEventListener('click', function(){
         li.classList.toggle('checked');
         })
-
         }
-        
       }
 
 
