@@ -5,82 +5,83 @@ body {
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
-  
-  
 }
 
-.container{
-    width: 100%;
-    max-width: 600px;
-    background:linear-gradient( 135deg, #D45D79, #FBEB9D);
-    margin: 100px auto 20px;
-    padding: 40px 30px;
-    box-shadow: 5px #fbeb9d3b; 
-    border-radius: 20px;
-
-    
+.container {
+  width: 100%;
+  max-width: 600px;
+  background: linear-gradient(135deg, #d45d79, #fbeb9d);
+  margin: 100px auto 20px;
+  padding: 40px 30px;
+  box-shadow: 5px #fbeb9d3b;
+  border-radius: 20px;
 }
-h1{
-    font-weight: bold;
-    font-style: oblique;
-    color: white;
-    padding-right: 100px;
+h1 {
+  font-weight: bold;
+  font-style: oblique;
+  font-size: 2.3em;
+  color: white;
+  padding-right: 50px;
 }
 
 #typeBox {
-    height: 35px;
-    width: 75%;
-    border-radius: 20px ;
-    text-align: center;
-    border: white;
-    
+  height: 35px;
+  width: 75%;
+  border-radius: 20px;
+  text-align: center;
+  border: white;
 }
 
-#printAdd{
-    border-radius: 20px;
-    padding: 10px 25px;
-    background-color: #d45d79c7;
-    color: white;
-    border: white;
+#printAdd {
+  border-radius: 20px;
+  padding: 10px 25px;
+  background-color: #d45d79c7;
+  color: white;
+  border: 2px solid #d45d79c7;
 }
 
-button:not(#printAdd){
-        margin-left: 50px;
+button:not(#printAdd) {
+  text-align: right;
+  margin-right: auto;
+  position: absolute;
+  right: 8px;
+  background-color: #ffebec;
+  border:none;
+  border-radius: 9px;
 }
 
-.newUl{
-    width: 60%;
-    max-width: 600px;
-    text-align: center;
-    margin: auto;
+.newUl {
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  margin: auto;
+  padding: 0;
+  
 }
-#myList li{
-    list-style: none; 
-    position: relative;
-    padding: 10px;
-
-}
-
-#myList li::before{
-    content: '';
-    position: absolute;
-    height: 28px;
-    width: 28px;
-    background-image: url(../img/unchecked.png);
-    background-size: cover;
-    background-position: center;
-    top: 12px;
-    left: 8px;
-
+#myList li {
+  list-style: none;
+  position: relative;
+  padding: 10px;
+  width: 100%;
 }
 
-#myList li.checked{
-    color:#555;
-    text-decoration: line-through;
-    
+#myList li::before {
+  content: "";
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  background-image: url(../img/unchecked.png);
+  background-size: cover;
+  background-position: center;
+  top: 12px;
+  left: 8px;
 }
 
-#myList li.checked::before{
-    background-image: url(../img/checked.png);
+#myList li.checked {
+  color: #555;
+  text-decoration: line-through;
+}
 
-} 
+#myList li.checked::before {
+  background-image: url(../img/checked.png);
+}

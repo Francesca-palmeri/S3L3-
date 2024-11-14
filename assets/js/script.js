@@ -13,7 +13,7 @@ function newElements(){
         li.innerHTML = inputBox.value; //viene stampato il valore(value) di inputBox all'interno del li appena creato
         list.appendChild(li); //appeso il li appena creato con il valore stampato all'interno di ul
         let btnCestino = document.createElement('button');
-        btnCestino.innerHTML = '🗑️';
+        btnCestino.innerHTML = '❌';
         li.appendChild(btnCestino);
         inputBox.value = ''; //svuota l'input - deve stare sotto a tutto
         btnCestino.addEventListener('click', function(){
