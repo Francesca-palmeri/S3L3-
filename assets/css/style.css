@@ -58,6 +58,12 @@ button:not(#printAdd) {
   padding: 0;
   
 }
+
+ul#myList{ 
+  padding: 0;
+  margin-right: 2em;
+
+}
 #myList li {
   list-style: none;
   position: relative;
