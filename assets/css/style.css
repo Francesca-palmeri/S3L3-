@@ -74,8 +74,8 @@ ul#myList{
 #myList li::before {
   content: "";
   position: absolute;
-  height: 28px;
-  width: 28px;
+  height: 24px;
+  width: 24px;
   background-image: url(../img/unchecked.png);
   background-size: cover;
   background-position: center;
